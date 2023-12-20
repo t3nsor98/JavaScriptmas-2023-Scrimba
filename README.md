@@ -29,5 +29,5 @@ Spread the holiday cheer! Pick a fellow elf’s #javascriptmas entry, record som
 
 ## Solutions Repository:
 
-Find my solutions to these festive challenges in this [repository](link-to-your-repository). Join me in the coding festivities! 🎅💻🎁
+Find my solutions to these festive challenges in this repository. Join me in the coding festivities! 🎅💻🎁
 >>>>>>> ed553b84266d9e61d6556e37e9a813ae8359a7b5
