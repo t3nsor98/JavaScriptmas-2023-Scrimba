@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--toggle-bg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+:root {
+    --toggle-switch-bg: #232428;
+    --toggle-border: #232428;
+    --toggle-bg: #fff;
+}
+
+.toggle-wrap {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    /* background-color: red; */
+    padding: 10px;
+    margin: auto;
+    /* margin-top: 100px; */
+}
+
+.toggle-input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-bg);
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: background-color 0.2s;
+}
+
+.toggle-switch::before{
+    position: absolute;
+    content: "";
+    height: 70px;
+    width: 70px;
+    left: 10px;
+    bottom: 10px;
+    background-color: black;
+    transition: transform 0.25s;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px black;
+}
+
+
+.toggle-input:checked + .toggle-switch::before {
+    transform: translate(80px);
+}
